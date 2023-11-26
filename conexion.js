@@ -87,3 +87,26 @@ app.get("/api/fechas_civicas", function(req, res) {
     });
 });
 
+servermysql.post("/user-form", function (req, res) {
+    const datos = req.body;
+    let nombre = datos.nombre;
+    let apellido = datos.apellido;    
+    let email = datos.email;
+    let celular = datos.celular;
+    let dni = datos.dni;    
+    let motivo = datos.motivo;
+
+
+
+    let registrar = "INSERT INTO RECLAMOS (fecha_presentacion, nombre, apellido, motivo,dni, gmail, celular) VALUES ('"+nombre+"','"+apellido+"','"+email+"','"+celular+"','"+dni+"','"+motivo+"')";
+
+    registros.query(registrar, function (error) {
+        if (error) {
+            throw error
+        } else {
+            console.log("Datos normales")
+        }
+    });
+});
+
+
