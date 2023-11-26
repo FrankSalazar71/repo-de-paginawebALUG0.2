@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/texto_movimiento.js"></script>
+    <script defer src="js/menu.js"></script>
+    <script defer src="../js/form.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <section class="registry-section">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>RECLAMOS</h2>
+            </div>
+            <form action="user-form" method="post" class="form">
+                <div class="form-box">
+                    <label for="Nombre">Nombre</label>
+                    <input type="Nombre" name="Nombre" id="nombres" placeholder="Nombre">
+                    <small class="error-text">Introduce un Nombre valido</small>
+                </div>
+                <div class="form-box">
+                    <label for="Apellido">Apellido</label>
+                    <input type="apellido" name="Apellido" id="apellidos" placeholder="Apellido">
+                    <small class="error-text">Introduce un Apellido valido</small>
+                </div>
+                <div class="form-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="emails" placeholder="info@gmail.com">
+                    <small class="error-text">Introduce un email valido</small>
+                </div>
+                <div class="form-box">
+                    <label for="nickCelular">Celular</label>
+                    <input type="text" name="Celular" id="celulars" placeholder="Número">
+                    <small class="error-text">Introduce un número válido</small>
+                </div>
+                <div class="form-box">
+                    <label for="nickDNI">DNI</label>
+                    <input type="text" name="dni" id="dnis" placeholder="DNI">
+                    <small class="error-text">Introduce un número de DNI valido</small>
+                </div>
+                <div class="form-box">
+                    <label for="nickMotivo">Motivo</label>
+                    <input type="text" name="nickMotivo" id="motivos">
+                    <small class="error-text">Introduce un motivo</small>
+                </div>
+                <button type="submit" id="submit-btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+
+</body>
+
+</html>
