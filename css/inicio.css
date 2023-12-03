@@ -285,7 +285,7 @@ body {
 
 .map-container {
     width: 100%;
-    max-width: 1295px; /* Set a maximum width to prevent the map from becoming too large on wide screens */
+    max-width: 1349px; /* Set a maximum width to prevent the map from becoming too large on wide screens */
     margin: 0 auto;
     height: 200px;
   }
